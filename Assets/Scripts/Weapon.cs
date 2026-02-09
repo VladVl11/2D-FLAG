@@ -20,6 +20,6 @@ public class Weapon : MonoBehaviour
 
     public void Fire() {
         Instantiate(bullet, transform.position, transform.rotation);
-        bullet.GetComponent<Rigidbody2D>().linearVelocityX = BSpeed;
+        bullet.GetComponent<Rigidbody2D>().AddForce(bullet.Transform.Rotation.x * BSpeed);
     }
 }
