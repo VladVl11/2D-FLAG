@@ -6,7 +6,6 @@ public class PlayerActions : MonoBehaviour
     [SerializeField]
     private float MSpeed;
     private Vector2 Dir;
-    private Rigidbody2D RB;
     private Weapon Gun;
 
     private void OnMove(InputValue value) {
@@ -19,11 +18,10 @@ public class PlayerActions : MonoBehaviour
     }
 
     private void Awake() {
-        RB = GetComponent<Rigidbody2D>();
         Gun = GetComponentInChildren<Weapon>();
     }
 
-    private void FixedUpdate() {
-        RB.linearVelocity = Dir * MSpeed;   
+    private void FixedUpdate(){
+        transform.Translate(Dir * MSpeed * Time.deltaTime);
     }
 }

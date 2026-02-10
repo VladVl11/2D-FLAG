@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,9 +6,8 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField]
     private GameObject bullet;
-    private float BSpeed = 10;
     private Vector3 MPos;
-    private Vector2 MDir;
+    private Vector3 MDir;
     private float angle;
 
     private void Update() {
@@ -20,6 +20,5 @@ public class Weapon : MonoBehaviour
 
     public void Fire() {
         Instantiate(bullet, transform.position, transform.rotation);
-        bullet.GetComponent<Rigidbody2D>().AddForce(bullet.Transform.Rotation.x * BSpeed);
     }
 }

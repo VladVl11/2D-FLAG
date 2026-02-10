@@ -73,6 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f08a91beeb34a394c835f31691b11fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
+  BSpeed: 30
 --- !u!212 &-6241865475209873009
 SpriteRenderer:
   m_ObjectHideFlags: 0
