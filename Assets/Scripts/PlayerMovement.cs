@@ -3,25 +3,25 @@ using UnityEngine.InputSystem;
 
 public class PlayerActions : MonoBehaviour
 {
-    [SerializeField]
-    private float MSpeed;
-    private Vector2 Dir;
-    private Weapon Gun;
+    private Vector2 dir;
+    private Weapon gun;
+    private PlayerStats stats;
 
     private void OnMove(InputValue value) {
-        Dir = value.Get<Vector2>();
+        dir = value.Get<Vector2>();
     }
 
     private void OnAttack()
     {
-        Gun.Fire();
+        gun.Fire();
     }
 
     private void Awake() {
-        Gun = GetComponentInChildren<Weapon>();
+        gun = GetComponentInChildren<Weapon>();
+        stats = GetComponent<PlayerStats>();
     }
 
     private void FixedUpdate(){
-        transform.Translate(Dir * MSpeed * Time.deltaTime);
+        transform.Translate(dir * stats.GetSpeed() * Time.deltaTime);
     }
 }
