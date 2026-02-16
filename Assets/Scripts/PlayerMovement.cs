@@ -7,6 +7,7 @@ public class PlayerActions : MonoBehaviour
     private Weapon gun;
     private PlayerStats stats;
     private Rigidbody2D rb;
+    [SerializeField] Transform gCheck;
 
     private void OnMove(InputValue value) {
         dir = value.Get<Vector2>();
@@ -15,6 +16,10 @@ public class PlayerActions : MonoBehaviour
     {
         gun.Fire();
     }
+    private void OnJump()
+    {
+        
+    }
 
     private void Awake() {
         gun = GetComponentInChildren<Weapon>();
@@ -22,7 +27,7 @@ public class PlayerActions : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void Update(){
-        rb.linearVelocity += dir * stats.GetSpeed() * Time.deltaTime;
+    private void FixedUpdate(){
+        rb.linearVelocity = new Vector2(dir.x * stats.GetSpeed(), rb.linearVelocityY);
     }
 }

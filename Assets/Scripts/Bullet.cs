@@ -17,6 +17,6 @@ public class Bullet : MonoBehaviour
             other.gameObject.GetComponent<IDamageable>().TakeDmg(bDmg);
             Debug.Log("hit");
         }
-        Destroy(this);
+        Destroy(this.gameObject);
     }
 }

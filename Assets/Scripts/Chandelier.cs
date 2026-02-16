@@ -3,23 +3,19 @@ using UnityEngine;
 public class Chandelier : MonoBehaviour
 {
     private bool triggered = false;
-    private float speed = 5;
+    private Rigidbody2D rb;
 
-    private void Update()
+    private void Awake()
     {
-        if(triggered)
-        {
-            transform.position -= transform.up * speed * Time.deltaTime;
-            Debug.Log("Falling");
-        }
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Player") && !triggered)
         {
+            rb.bodyType = RigidbodyType2D.Dynamic;
             triggered = true;
-            Debug.Log("Triggered");
         }
     }
 
@@ -29,5 +25,7 @@ public class Chandelier : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerStats>().StartCoroutine("Stun");
         }
+        Debug.Log("FUCKIGN DESTROY DAMMIT");
+        Destroy(this.gameObject);
     }
 }
