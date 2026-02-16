@@ -1,3 +1,4 @@
+using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,9 @@ public class PlayerActions : MonoBehaviour
     private PlayerStats stats;
     private Rigidbody2D rb;
     [SerializeField] Transform gCheck;
+    private float timesJumped;
+    [SerializeField] private float jForce;
+    [SerializeField] private LayerMask gLayer;
 
     private void OnMove(InputValue value) {
         dir = value.Get<Vector2>();
@@ -18,7 +22,13 @@ public class PlayerActions : MonoBehaviour
     }
     private void OnJump()
     {
-        
+        if(Physics2D.OverlapCircle(gCheck.position, 0.1f, gLayer) || timesJumped < 1)
+        {
+            Debug.Log("jumping");
+            rb.AddForce(Vector2.up * jForce, ForceMode2D.Impulse);
+            timesJumped++;
+            Debug.Log(timesJumped);
+        }
     }
 
     private void Awake() {
@@ -29,5 +39,9 @@ public class PlayerActions : MonoBehaviour
 
     private void FixedUpdate(){
         rb.linearVelocity = new Vector2(dir.x * stats.GetSpeed(), rb.linearVelocityY);
+        if(Physics2D.OverlapCircle(gCheck.position, 0.1f, gLayer) && timesJumped >0)
+        {
+            timesJumped = 0;
+        }
     }
 }
