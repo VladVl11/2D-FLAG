@@ -1,23 +1,37 @@
+using System.Collections;
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour, IDamageable
+public class PlayerStats : MonoBehaviour
 {
-    private float hp = 50;
+    [SerializeField]
     private float mSpeed;
+    private float currentSpeed;
+
+    private void Awake()
+    {
+        currentSpeed = mSpeed;
+    }
 
     public float GetSpeed()
     {
-        return mSpeed;
+        return currentSpeed;
     }
 
-    public void TakeDmg(float dmg)
+    private void Slow()
     {
-        hp -= dmg;
-        if(hp <= 0)
-        {
-            Destroy(this);
-        }
+        currentSpeed /= 1.5f;
     }
 
+    private void normalSpeed()
+    {
+        currentSpeed = mSpeed;
+    }
 
+    public IEnumerator Stun()
+    {
+        float tmp = currentSpeed;
+        currentSpeed = 0;
+        yield return new WaitForSeconds(1.5f);
+        currentSpeed = tmp;
+    }
 }

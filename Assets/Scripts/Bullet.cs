@@ -2,9 +2,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField]
-    private float bSpeed;
-    private float bDmg;
+    [SerializeField] private float bSpeed;
+    private float bDmg = 10;
 
     private void Update()
     {
@@ -13,13 +12,11 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) 
     {
-        if(!other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Obstacle"))
         {
-            if(other.gameObject.TryGetComponent<IDamageable>(out var damageable))
-            {
-                damageable.TakeDmg(bDmg);
-            }
+            other.gameObject.GetComponent<IDamageable>().TakeDmg(bDmg);
+            Debug.Log("hit");
         }
-        
+        Destroy(this);
     }
 }

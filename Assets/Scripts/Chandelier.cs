@@ -1,34 +1,33 @@
 using UnityEngine;
-using UnityEngine.Windows.Speech;
 
 public class Chandelier : MonoBehaviour
 {
     private bool triggered = false;
-    private float speed = 20;
-    private float dmg = 30;
+    private float speed = 5;
 
     private void Update()
     {
         if(triggered)
         {
             transform.position -= transform.up * speed * Time.deltaTime;
+            Debug.Log("Falling");
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.CompareTag("Player") && !triggered)
         {
             triggered = true;
+            Debug.Log("Triggered");
         }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.TryGetComponent<IDamageable>(out var damageable))
+        if(other.gameObject.CompareTag("Player"))
         {
-            damageable.TakeDmg(dmg);
+            other.gameObject.GetComponent<PlayerStats>().StartCoroutine("Stun");
         }
-        Destroy(this);
     }
 }
