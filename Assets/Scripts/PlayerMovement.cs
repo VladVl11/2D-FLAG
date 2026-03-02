@@ -38,7 +38,7 @@ public class PlayerActions : MonoBehaviour
     }
 
     private void FixedUpdate(){
-        rb.linearVelocity = new Vector2(dir.x * stats.GetSpeed(), rb.linearVelocityY);
+        rb.linearVelocity = new Vector2(Mathf.Lerp(rb.linearVelocityX, dir.x * stats.GetSpeed(), 0.2f), rb.linearVelocityY);
         if(Physics2D.OverlapCircle(gCheck.position, 0.1f, gLayer) && timesJumped >0)
         {
             timesJumped = 0;
