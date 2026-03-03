@@ -171,7 +171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   gCheck: {fileID: 2818275083459336881}
-  jForce: 6
   gLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -187,7 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b53672b6581f324a8e66b92c272bcb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
-  mSpeed: 6
+  mSpeed: 8
+  isStunnable: 1
 --- !u!58 &2153013524138309895
 CircleCollider2D:
   m_ObjectHideFlags: 0

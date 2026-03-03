@@ -12,7 +12,7 @@ public class Chandelier : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Player") && !triggered)
+        if(other.CompareTag("Player") && !triggered)
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
             triggered = true;
@@ -25,7 +25,6 @@ public class Chandelier : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerStats>().StartCoroutine("Stun");
         }
-        Debug.Log("FUCKIGN DESTROY DAMMIT");
         Destroy(this.gameObject);
     }
 }

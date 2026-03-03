@@ -10,7 +10,6 @@ public class PlayerActions : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] Transform gCheck;
     private float timesJumped;
-    [SerializeField] private float jForce;
     [SerializeField] private LayerMask gLayer;
 
     private void OnMove(InputValue value) {
@@ -25,7 +24,7 @@ public class PlayerActions : MonoBehaviour
         if(Physics2D.OverlapCircle(gCheck.position, 0.1f, gLayer) || timesJumped < 1)
         {
             Debug.Log("jumping");
-            rb.AddForce(Vector2.up * jForce, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * stats.GetJForce(), ForceMode2D.Impulse);
             timesJumped++;
             Debug.Log(timesJumped);
         }
@@ -38,7 +37,7 @@ public class PlayerActions : MonoBehaviour
     }
 
     private void FixedUpdate(){
-        rb.linearVelocity = new Vector2(Mathf.Lerp(rb.linearVelocityX, dir.x * stats.GetSpeed(), 0.2f), rb.linearVelocityY);
+        rb.linearVelocity = new Vector2(Mathf.Lerp(rb.linearVelocityX, dir.x * stats.GetSpeed(), 0.25f), rb.linearVelocityY);
         if(Physics2D.OverlapCircle(gCheck.position, 0.1f, gLayer) && timesJumped >0)
         {
             timesJumped = 0;

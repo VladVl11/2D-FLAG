@@ -6,23 +6,33 @@ public class PlayerStats : MonoBehaviour
     [SerializeField]
     private float mSpeed;
     private float currentSpeed;
+    public bool isStunnable = true;
+    private float jForce = 6f;
 
     private void Awake()
     {
         currentSpeed = mSpeed;
     }
 
+    /////////
+    /// GETTERS
     public float GetSpeed()
     {
         return currentSpeed;
     }
 
-    private void Slow()
+    public float GetJForce()
     {
-        currentSpeed /= 1.5f;
+        return jForce;
+    }
+    /////////
+
+    public void Slow(float modif)
+    {
+        currentSpeed /= modif;
     }
 
-    private void normalSpeed()
+    public void normalSpeed()
     {
         currentSpeed = mSpeed;
     }
@@ -31,7 +41,10 @@ public class PlayerStats : MonoBehaviour
     {
         float tmp = currentSpeed;
         currentSpeed = 0;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         currentSpeed = tmp;
+        isStunnable = false;
+        yield return new WaitForSeconds(1f);
+        isStunnable = true;
     }
 }
