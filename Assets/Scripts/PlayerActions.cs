@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -13,15 +14,21 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] private LayerMask gLayer;
 
     private void OnMove(InputValue value) {
-        dir = value.Get<Vector2>();
+        if(!stats.stunned)
+        {
+            dir = value.Get<Vector2>();
+        }
     }
     private void OnAttack()
     {
-        gun.Fire();
+        if(!stats.stunned)
+        {
+            gun.Fire();
+        }
     }
     private void OnJump()
     {
-        if(Physics2D.OverlapCircle(gCheck.position, 0.1f, gLayer) || timesJumped < 1)
+        if(timesJumped < 1 && !stats.stunned)
         {
             Debug.Log("jumping");
             rb.AddForce(Vector2.up * stats.GetJForce(), ForceMode2D.Impulse);

@@ -13,7 +13,7 @@ public class spikes : MonoBehaviour
         }
         if(stats != null)
         {
-            stats.Slow(1.5f);
+            stats.SetSpeed(1f / 3f);
         }
     }
 
@@ -21,7 +21,7 @@ public class spikes : MonoBehaviour
     {
         if(stats != null)
         {
-            stats.normalSpeed();
+            stats.SetSpeed(3f);
         }
         stats = null;
     }

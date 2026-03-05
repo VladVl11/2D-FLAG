@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour
     private float currentSpeed;
     public bool isStunnable = true;
     private float jForce = 6f;
+    public bool stunned = false;
 
     private void Awake()
     {
@@ -27,24 +28,21 @@ public class PlayerStats : MonoBehaviour
     }
     /////////
 
-    public void Slow(float modif)
+    public void SetSpeed(float modif)
     {
-        currentSpeed /= modif;
-    }
-
-    public void normalSpeed()
-    {
-        currentSpeed = mSpeed;
+        currentSpeed *= modif;
     }
 
     public IEnumerator Stun()
     {
-        float tmp = currentSpeed;
-        currentSpeed = 0;
-        yield return new WaitForSeconds(1f);
-        currentSpeed = tmp;
-        isStunnable = false;
-        yield return new WaitForSeconds(1f);
-        isStunnable = true;
+        if(isStunnable)
+        {
+            isStunnable = false;
+            stunned = true;
+            yield return new WaitForSeconds(1f);
+            stunned = false;
+            yield return new WaitForSeconds(1f);
+            isStunnable = true;
+        }
     }
 }

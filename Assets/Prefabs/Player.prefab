@@ -167,13 +167,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 8438969841543889511}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aba5af457d0ac10409503611a252ab0d, type: 3}
+  m_Script: {fileID: 11500000, guid: d3fd739fd0e579f4e99103c2ab26aa6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   gCheck: {fileID: 2818275083459336881}
   gLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
 --- !u!114 &-3750292894674465230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStats
   mSpeed: 8
   isStunnable: 1
+  stunned: 0
 --- !u!58 &2153013524138309895
 CircleCollider2D:
   m_ObjectHideFlags: 0
