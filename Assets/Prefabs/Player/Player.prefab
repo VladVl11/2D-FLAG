@@ -173,7 +173,7 @@ MonoBehaviour:
   gCheck: {fileID: 2818275083459336881}
   gLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!114 &-3750292894674465230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +233,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8438969841543889511}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

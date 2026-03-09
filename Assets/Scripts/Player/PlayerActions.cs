@@ -13,6 +13,7 @@ public class PlayerActions : MonoBehaviour
     private float timesJumped;
     [SerializeField] private LayerMask gLayer;
 
+    /// Input system functions
     private void OnMove(InputValue value) {
         if(!stats.stunned)
         {

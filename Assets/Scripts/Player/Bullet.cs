@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float bSpeed;
-    private float bDmg = 10;
+    private float bDmg = 1;
 
     private void Update()
     {
@@ -13,9 +13,9 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) 
     {
-        if(other.gameObject.CompareTag("Obstacle"))
+        if(other.gameObject.TryGetComponent<IDamageable>(out IDamageable obs))
         {
-            other.gameObject.GetComponent<IDamageable>().TakeDmg(bDmg);
+            obs.TakeDmg(bDmg);
         }
         Destroy(this.gameObject);
     }

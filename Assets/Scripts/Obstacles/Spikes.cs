@@ -3,15 +3,10 @@ using UnityEngine;
 
 public class spikes : MonoBehaviour
 {
-    PlayerStats stats;
-
+    private PlayerStats stats;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && stats == null)
-        {
-            stats = other.GetComponent<PlayerStats>();
-        }
-        if(stats != null)
+        if(other.TryGetComponent<PlayerStats>(out stats))
         {
             stats.SetSpeed(1f / 3f);
         }
@@ -23,6 +18,5 @@ public class spikes : MonoBehaviour
         {
             stats.SetSpeed(3f);
         }
-        stats = null;
     }
 }

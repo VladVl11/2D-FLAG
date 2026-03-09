@@ -21,9 +21,9 @@ public class Chandelier : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag("Player"))
+        if(other.gameObject.TryGetComponent<PlayerStats>(out PlayerStats stats))
         {
-            other.gameObject.GetComponent<PlayerStats>().StartCoroutine("Stun");
+            stats.Stun();
         }
         Destroy(this.gameObject);
     }
