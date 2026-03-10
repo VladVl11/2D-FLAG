@@ -9,6 +9,8 @@ public class MapGeneration : MonoBehaviour
     public GameObject[] MapPrefabs; // Array of map prefabs
     public int mapSize; // Size of the map (width)
     public float mapY; // Y position for the map prefabs
+    public GameObject PlayerCharacter; //The Player Character
+    public Vector3 PlayerSpawn; //The Player Spawn Point
     void mapGenerator()
     {
         
@@ -32,8 +34,9 @@ public class MapGeneration : MonoBehaviour
                 continue;
             }
 
-
+            
         }
+        Instantiate(PlayerCharacter, PlayerSpawn, Quaternion.identity);
     }
         
 

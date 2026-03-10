@@ -163,7 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba5af457d0ac10409503611a252ab0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  MSpeed: 10
 --- !u!1001 &6629689228686685114
 PrefabInstance:
   m_ObjectHideFlags: 0
