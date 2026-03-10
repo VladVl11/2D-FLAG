@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
         Destroy(this.gameObject, 3);
     }
 
-    private void OnCollisionEnter2D(Collision2D other) 
+    private void OnTriggerEnter2D(Collider2D other) 
     {
         if(other.gameObject.TryGetComponent<IDamageable>(out IDamageable obs))
         {
