@@ -19,4 +19,13 @@ public class Bullet : MonoBehaviour
         }
         Destroy(this.gameObject);
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.TryGetComponent<IDamageable>(out IDamageable obs))
+        {
+            obs.TakeDmg(bDmg);
+        }
+        Destroy(this.gameObject);
+    }
 }
