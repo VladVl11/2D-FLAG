@@ -10,7 +10,7 @@ public class Table : MonoBehaviour, IDamageable
     {
         if(other.gameObject.TryGetComponent<PlayerStats>(out PlayerStats stats))
         {
-            stats.Tripp(transform);
+            stats.Tripp();
         }
     }
 

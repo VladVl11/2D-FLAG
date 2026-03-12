@@ -90,13 +90,14 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    public void Tripp(Transform obj)
+    public void Tripp()
     {
         if(isStunnable)
         {
             isStunnable = false;
             tripped = true;
-            rb.AddForce((obj.position - transform.position) * 0.01f, ForceMode2D.Impulse);
+            float trippDirection = rb.linearVelocityX > 0 ? 1f : -1f;
+            rb.AddForce(new Vector2(trippDirection * 0.5f, 0), ForceMode2D.Impulse);
         }
     }
 }
