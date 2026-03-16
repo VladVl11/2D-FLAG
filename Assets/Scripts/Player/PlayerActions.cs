@@ -15,26 +15,21 @@ public class PlayerActions : MonoBehaviour
 
     /// Input system functions
     private void OnMove(InputValue value) {
-        if(!stats.stunned)
-        {
-            dir = value.Get<Vector2>();
-        }
+        dir = value.Get<Vector2>();
     }
     private void OnAttack()
     {
-        if(!stats.stunned)
+        if(!stats.stunned && !stats.tripped)
         {
             gun.Fire();
         }
     }
     private void OnJump()
     {
-        if(timesJumped < 1 && !stats.stunned)
+        if(timesJumped < 1 && !stats.stunned && !stats.tripped)
         {
-            Debug.Log("jumping");
             rb.AddForce(Vector2.up * stats.GetJForce(), ForceMode2D.Impulse);
             timesJumped++;
-            Debug.Log(timesJumped);
         }
     }
 
@@ -45,8 +40,15 @@ public class PlayerActions : MonoBehaviour
     }
 
     private void FixedUpdate(){
-        rb.linearVelocity = new Vector2(Mathf.Lerp(rb.linearVelocityX, dir.x * stats.GetSpeed(), 0.25f), rb.linearVelocityY);
-        if(Physics2D.OverlapCircle(gCheck.position, 0.1f, gLayer) && timesJumped >0)
+        if(!stats.stunned && !stats.tripped)
+        {
+            rb.linearVelocity = new Vector2(Mathf.Lerp(rb.linearVelocityX, dir.x * stats.GetSpeed(), 0.25f), rb.linearVelocityY);
+        }
+        if(!Physics2D.OverlapCircle(gCheck.position, 0.05f, gLayer) && rb.linearVelocityY !< 0)
+        {
+            rb.linearVelocityY = Mathf.Lerp(rb.linearVelocityY, Physics2D.gravity.y * rb.gravityScale, 0.25f);
+        }
+        if(Physics2D.OverlapCircle(gCheck.position, 0.05f, gLayer) && timesJumped >0)
         {
             timesJumped = 0;
         }

@@ -1,54 +1,64 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PlayerStats : MonoBehaviour
 {
-    [SerializeField]
+    
     // Movement variables
-    private float mSpeed;
+    [SerializeField] private float mSpeed;
     private float currentSpeed;
-    private float jForce = 6f;
+    private float jForce = 3.4f;
 
     // Stun variables
-    public bool isStunnable = true;
+    private bool isStunnable = true;
     public bool stunned = false;
     private float stunTimer = 0f;
     private float stunTime = 1f;
-    private float notStunnableTime = 2f;
+    private float notStunnableTime = 1f;
     
     // Trip variables
-    private bool isTripped = false;
-    private float trippTimer = 0f;
+    public bool tripped = false;
     private float trippTime = 0.5f;
+
+    // References
+    private Rigidbody2D rb;
 
 
     private void Awake()
     {
         currentSpeed = mSpeed;
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        if(stunned || !isStunnable)
+        if(stunned)
         {
             stunTimer += Time.deltaTime;
-            if(stunTimer > stunTime && stunned)
+            if(stunTimer > stunTime)
             {
                 stunned = false;
-            }
-            else if(stunTimer > notStunnableTime && !isStunnable)
-            {
-                isStunnable = true;
                 stunTimer = 0f;
             }
         }
-        if(isTripped)
+
+        if(tripped)
         {
-            trippTimer += Time.deltaTime;
-            if(trippTimer > trippTime)
+            stunTimer += Time.deltaTime;
+            if(stunTimer > trippTime)
             {
-                currentSpeed = mSpeed;
-                isTripped = false;
+                tripped = false;
+                stunTimer = 0f;
+            }
+        }
+        if(!isStunnable && !stunned && !tripped)
+        {
+            stunTimer += Time.deltaTime;
+            if(stunTimer > notStunnableTime)
+            {
+                isStunnable = true;
+                stunTimer = 0f;
             }
         }
     } 
@@ -70,12 +80,6 @@ public class PlayerStats : MonoBehaviour
         currentSpeed *= modif;
     }
 
-    public void SetSpeed(float modif, bool tripped)
-    {
-        currentSpeed *= modif;
-        isTripped = tripped;
-    }
-
     /// Functions
     public void Stun()
     {
@@ -83,6 +87,17 @@ public class PlayerStats : MonoBehaviour
         {
             isStunnable = false;
             stunned = true;
+        }
+    }
+
+    public void Tripp()
+    {
+        if(isStunnable)
+        {
+            isStunnable = false;
+            tripped = true;
+            float trippDirection = rb.linearVelocityX > 0 ? 1f : -1f;
+            rb.AddForce(new Vector2(trippDirection * 0.5f, 0), ForceMode2D.Impulse);
         }
     }
 }
