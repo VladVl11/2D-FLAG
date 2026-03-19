@@ -11,6 +11,8 @@ public class MapGeneration : MonoBehaviour
     public float mapY; // Y position for the map prefabs
     public GameObject PlayerCharacter; //The Player Character
     public Vector3 PlayerSpawn; //The Player Spawn Point
+    public CameraMovement Camera; //The Camera that will follow the player
+    public GameObject[] GameObjectCamera;
     void mapGenerator()
     {
         
@@ -36,7 +38,8 @@ public class MapGeneration : MonoBehaviour
 
             
         }
-        Instantiate(PlayerCharacter, PlayerSpawn, Quaternion.identity);
+        GameObject newPlayer = Instantiate(PlayerCharacter, PlayerSpawn, Quaternion.identity);
+        Camera.player = newPlayer.transform;
     }
         
 

@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa4b283881a03d4ab475f95538dc51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraMovement
-  player: {fileID: 1413841391664995072, guid: 5f2f1fd66689edf4d8d2e0ec6839f2aa, type: 3}
+  player: {fileID: 2543475338411275529, guid: 5f2f1fd66689edf4d8d2e0ec6839f2aa, type: 3}
 --- !u!1 &636067731
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,8 +307,10 @@ MonoBehaviour:
   - {fileID: 6331982067733236079, guid: ade63c99836666d44b5ff0e2e52e51ce, type: 3}
   mapSize: 15
   mapY: -3.5
-  PlayerCharacter: {fileID: 8438969841543889511, guid: 5f2f1fd66689edf4d8d2e0ec6839f2aa, type: 3}
+  PlayerCharacter: {fileID: 1166264932786135069, guid: 5f2f1fd66689edf4d8d2e0ec6839f2aa, type: 3}
   PlayerSpawn: {x: 0, y: 5, z: 0}
+  Camera: {fileID: 220115154}
+  GameObjectCamera: []
 --- !u!4 &636067733
 Transform:
   m_ObjectHideFlags: 0
