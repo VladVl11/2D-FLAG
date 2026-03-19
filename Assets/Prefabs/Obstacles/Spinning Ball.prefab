@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 511aeb8950f0c1845b14a58e400db109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpinningSpikeball
-  rotationSpeed: 200
+  rotationSpeed: 10
   ball: {fileID: 6951968234276264185, guid: 43ae0c977cfc1114fbbea323839fb114, type: 3}
   chain: {fileID: 1684828222420301095, guid: d6c13d0c79bdf904da6b2551c7d59557, type: 3}
   body: {fileID: 6999319053028177199}
-  chainLength: 0
+  chainLength: 2

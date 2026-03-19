@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4440950502612137874}
   - component: {fileID: 5819956952745062880}
-  - component: {fileID: 5862447066123719044}
   m_Layer: 0
   m_Name: Chain
   m_TagString: Untagged
@@ -30,7 +29,8 @@ Transform:
   m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 0.075, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8926347184941066935}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5819956952745062880
@@ -91,18 +91,77 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5862447066123719044
-MonoBehaviour:
+--- !u!1001 &1853897081537541377
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4440950502612137874}
+    m_Modifications:
+    - target: {fileID: 4205864656265909942, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: chain
+      value: 
+      objectReference: {fileID: 1684828222420301095}
+    - target: {fileID: 6999319053028177199, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_Name
+      value: Spinning Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.333333
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0017870268
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.686522
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+--- !u!4 &8926347184941066935 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7087149493784010678, guid: cec85d8ea0893fb4088cffe43e9bcc76, type: 3}
+  m_PrefabInstance: {fileID: 1853897081537541377}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1684828222420301095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aacdf3a2ab8461a43ac158cb7e23adee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BallInstantiator
-  ball: {fileID: 6951968234276264185, guid: 43ae0c977cfc1114fbbea323839fb114, type: 3}
-  chain: {fileID: 1684828222420301095}
-  chainLength: 3

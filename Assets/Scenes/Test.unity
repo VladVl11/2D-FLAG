@@ -301,14 +301,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MapGeneration
   MapPrefabs:
   - {fileID: 1820172537845974543, guid: a097d904c70a42c4b9e95831436d2fe7, type: 3}
-  - {fileID: 1455584997254784330, guid: de8702cfe9d45ee418cd9fc274b68fb9, type: 3}
-  - {fileID: 8719562224409973546, guid: 5aac5da4d7bce634498c8990bc96e228, type: 3}
   - {fileID: 5949336496029701931, guid: ac3a22aedcb075940a59396b53104703, type: 3}
   - {fileID: 6331982067733236079, guid: ade63c99836666d44b5ff0e2e52e51ce, type: 3}
-  mapSize: 15
+  mapSize: 3
   mapY: -3.5
   PlayerCharacter: {fileID: 1166264932786135069, guid: 5f2f1fd66689edf4d8d2e0ec6839f2aa, type: 3}
-  PlayerSpawn: {x: 0, y: 5, z: 0}
+  PlayerSpawn: {x: -5, y: 5, z: 0}
   Camera: {fileID: 220115154}
   GameObjectCamera: []
 --- !u!4 &636067733
