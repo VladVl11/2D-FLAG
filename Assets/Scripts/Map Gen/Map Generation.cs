@@ -38,6 +38,7 @@ public class MapGeneration : MonoBehaviour
 
             
         }
+        Debug.Log("Map Generated");
         GameObject newPlayer = Instantiate(PlayerCharacter, PlayerSpawn, Quaternion.identity);
         Camera.player = newPlayer.transform;
     }
