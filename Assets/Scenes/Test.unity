@@ -300,10 +300,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapGeneration
   MapPrefabs:
-  - {fileID: 1820172537845974543, guid: a097d904c70a42c4b9e95831436d2fe7, type: 3}
-  - {fileID: 5949336496029701931, guid: ac3a22aedcb075940a59396b53104703, type: 3}
-  - {fileID: 6331982067733236079, guid: ade63c99836666d44b5ff0e2e52e51ce, type: 3}
-  mapSize: 3
+  - {fileID: 1359476822017235876, guid: 371ca714a7166d44e877f10e8d9b21d0, type: 3}
+  - {fileID: 1359476822017235876, guid: 9df20fa8e158e094cadf151ce881c6d6, type: 3}
+  mapSize: 12
   mapY: -3.5
   PlayerCharacter: {fileID: 1166264932786135069, guid: 5f2f1fd66689edf4d8d2e0ec6839f2aa, type: 3}
   PlayerSpawn: {x: -5, y: 5, z: 0}
