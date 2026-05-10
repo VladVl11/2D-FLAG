@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b90e41dc2d0ef41a36ffd8e6ed5efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PresetLength
-  length: 20
+  length: 25
 --- !u!1 &8273188587977810883
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 3170807339830482324}
   - component: {fileID: 2685609757661706504}
   - component: {fileID: 5897258199534438925}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -76,8 +76,8 @@ Transform:
   m_GameObject: {fileID: 8273188587977810883}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.512, y: -16.135, z: 0}
-  m_LocalScale: {x: 269.1664, y: 20, z: 10}
+  m_LocalPosition: {x: 0, y: -16.135, z: 0}
+  m_LocalScale: {x: 270, y: 20, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5761262189814630421}

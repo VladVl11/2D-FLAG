@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Xml;
 using UnityEngine;
 
@@ -13,11 +14,16 @@ public class MapGeneration : MonoBehaviour
     public Vector3 PlayerSpawn; //The Player Spawn Point
     public CameraMovement Camera; //The Camera that will follow the player
     public GameObject[] GameObjectCamera;
+    public GameObject StartPreset;
+    public GameObject FinishPreset;
+    private Transform currentExit;
     void mapGenerator()
     {
         
-        float spawnPos = 0;
+        
         GameObject LastPrefab = null;
+        Instantiate(StartPreset, new Vector3(0, mapY, 0), Quaternion.identity);
+        
         for (int i = 0; i < mapSize; i++)
         {
             
@@ -25,9 +31,11 @@ public class MapGeneration : MonoBehaviour
             if (prefab != LastPrefab)
             {
                 LastPrefab = prefab;
-                Instantiate(prefab, new Vector3(spawnPos, mapY, 0), Quaternion.identity);
-                float length = prefab.GetComponent<PresetLength>().length;
-                spawnPos += length;
+                Instantiate(prefab, new Vector3(0, mapY, 0), Quaternion.identity);
+                Vector3 entryOffset = prefab.GetComponent<PresetLength>().entrypoint.position - prefab.transform.position;
+                currentExit = prefab.GetComponent<PresetLength>().exitpoint;
+                Vector3 vector3 = currentExit.position + entryOffset;
+                prefab.transform.position = vector3;
                 GameObject duplicatePrefabCheck = prefab;
             }
             else
@@ -35,8 +43,12 @@ public class MapGeneration : MonoBehaviour
                 i--;
                 continue;
             }
+            if (i == mapSize)
+            {
+                Instantiate(FinishPreset, new Vector3(0, mapY, 0), Quaternion.identity);
+            }
 
-            
+
         }
         
         GameObject newPlayer = Instantiate(PlayerCharacter, PlayerSpawn, Quaternion.identity);
