@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
 
-    private Vector3 offset = new Vector3(0, 0, -10f); // Offset from the player character
+    private Vector3 offset = new Vector3(0, 2f, -10f); // Offset from the player character
     private float smoothTime = 0.25f;
     private Vector3 velocity = Vector3.zero;
 
