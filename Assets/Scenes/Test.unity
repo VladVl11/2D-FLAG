@@ -301,15 +301,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MapGeneration
   MapPrefabs:
   - {fileID: 1359476822017235876, guid: 371ca714a7166d44e877f10e8d9b21d0, type: 3}
-  - {fileID: 1359476822017235876, guid: 9df20fa8e158e094cadf151ce881c6d6, type: 3}
+  - {fileID: 1359476822017235876, guid: cbe1805694b92424bb432880e209e32f, type: 3}
   - {fileID: 8862945118188341210, guid: f30e1402575d90e4ca0fdae476d4c732, type: 3}
   - {fileID: 8970453814451441795, guid: b1338ac4fc0ac7c428a551e415aae5c9, type: 3}
   - {fileID: 1693573761189968599, guid: a0a7a15275160f246b5961b8869f3e48, type: 3}
-  - {fileID: 1693573761189968599, guid: c6f2be06aaeed3a47998ca90b114693f, type: 3}
+  - {fileID: 1693573761189968599, guid: 6c50ec51dd34b904ebefaf77bce432cc, type: 3}
   - {fileID: 4774981059497383869, guid: 1a13696932685c044a2f0cc144130c87, type: 3}
-  - {fileID: 4774981059497383869, guid: d9d07ad91fd54c44bb81adbf84a294e6, type: 3}
+  - {fileID: 4774981059497383869, guid: 70203243558bfa043b03bff216107c84, type: 3}
   - {fileID: 8844366625390626375, guid: 6dffb0228da548b41b5d20116e79b020, type: 3}
-  - {fileID: 8844366625390626375, guid: b62da827115f97241b51f7127461768a, type: 3}
+  - {fileID: 8844366625390626375, guid: a5208f3c7d834414f9c2f0a1ef85f9d3, type: 3}
   mapSize: 40
   mapY: -3.5
   PlayerCharacter: {fileID: 1166264932786135069, guid: 5f2f1fd66689edf4d8d2e0ec6839f2aa, type: 3}
