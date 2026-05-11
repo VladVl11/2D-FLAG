@@ -232,6 +232,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 11.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 15.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -348,6 +364,22 @@ PrefabInstance:
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 8.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 27.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x

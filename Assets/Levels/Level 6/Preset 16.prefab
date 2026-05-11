@@ -583,11 +583,11 @@ Transform:
   - {fileID: 7633346757934383611}
   - {fileID: 7695712699584234291}
   - {fileID: 1952490293176264619}
-  - {fileID: 6886325306400653233}
-  - {fileID: 2433183600086789575}
-  - {fileID: 3053584997613517025}
-  - {fileID: 3509349239136783877}
-  - {fileID: 5269868464178115404}
+  - {fileID: 7320431020426121857}
+  - {fileID: 3856289043211710266}
+  - {fileID: 1568311136470605443}
+  - {fileID: 981801396454243025}
+  - {fileID: 6341301309668526911}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3920842908724489150
@@ -740,7 +740,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1001 &2515861899500542815
+--- !u!1001 &1795918422846977647
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -750,12 +750,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3441272859452504369, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Name
-      value: Chandelier (3)
+      value: Chandelier (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442517193064499655, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4133132547046289996, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 506123731676015549, guid: 38522d3291c3e114586db5e1a2397c27, type: 3}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.x
+      value: 23.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.y
+      value: 80.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.y
+      value: -41.14
+      objectReference: {fileID: 0}
     - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 22.83188
@@ -778,7 +798,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.7
+      value: 94.4
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -821,12 +841,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
---- !u!4 &6886325306400653233 stripped
+--- !u!4 &7320431020426121857 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
-  m_PrefabInstance: {fileID: 2515861899500542815}
+  m_PrefabInstance: {fileID: 1795918422846977647}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3772136333124753314
+--- !u!1001 &2700986054485438417
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -836,12 +856,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3441272859452504369, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Name
-      value: Chandelier (7)
+      value: Chandelier (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442517193064499655, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4133132547046289996, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 506123731676015549, guid: 38522d3291c3e114586db5e1a2397c27, type: 3}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.x
+      value: 23.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.y
+      value: 80.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.y
+      value: -41.14
+      objectReference: {fileID: 0}
     - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 22.83188
@@ -864,7 +904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 374.3
+      value: 392.3
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -907,12 +947,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
---- !u!4 &5269868464178115404 stripped
+--- !u!4 &6341301309668526911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
-  m_PrefabInstance: {fileID: 3772136333124753314}
+  m_PrefabInstance: {fileID: 2700986054485438417}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5604925424634784491
+--- !u!1001 &5260007569698393044
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -922,12 +962,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3441272859452504369, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Name
-      value: Chandelier (6)
+      value: Chandelier (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442517193064499655, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4133132547046289996, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 506123731676015549, guid: 38522d3291c3e114586db5e1a2397c27, type: 3}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.x
+      value: 23.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.y
+      value: 80.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.y
+      value: -41.14
+      objectReference: {fileID: 0}
     - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 22.83188
@@ -950,7 +1010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 282.5
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -993,12 +1053,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
---- !u!4 &3509349239136783877 stripped
+--- !u!4 &3856289043211710266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
-  m_PrefabInstance: {fileID: 5604925424634784491}
+  m_PrefabInstance: {fileID: 5260007569698393044}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6276755711709371407
+--- !u!1001 &7545998721171782253
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1008,12 +1068,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3441272859452504369, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Name
-      value: Chandelier (5)
+      value: Chandelier (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442517193064499655, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4133132547046289996, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 506123731676015549, guid: 38522d3291c3e114586db5e1a2397c27, type: 3}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.x
+      value: 23.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.y
+      value: 80.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.y
+      value: -41.14
+      objectReference: {fileID: 0}
     - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 22.83188
@@ -1036,7 +1116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 189.9
+      value: 189.3
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1079,12 +1159,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
---- !u!4 &3053584997613517025 stripped
+--- !u!4 &1568311136470605443 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
-  m_PrefabInstance: {fileID: 6276755711709371407}
+  m_PrefabInstance: {fileID: 7545998721171782253}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6683166920048036137
+--- !u!1001 &8132102739279961663
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1094,12 +1174,32 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3441272859452504369, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Name
-      value: Chandelier (4)
+      value: Chandelier (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442517193064499655, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4133132547046289996, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 506123731676015549, guid: 38522d3291c3e114586db5e1a2397c27, type: 3}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.x
+      value: 23.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Size.y
+      value: 80.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
+      propertyPath: m_Offset.y
+      value: -41.14
+      objectReference: {fileID: 0}
     - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 22.83188
@@ -1122,7 +1222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 80.2
+      value: 298.3
       objectReference: {fileID: 0}
     - target: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1165,8 +1265,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
---- !u!4 &2433183600086789575 stripped
+--- !u!4 &981801396454243025 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9041828854903104750, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
-  m_PrefabInstance: {fileID: 6683166920048036137}
+  m_PrefabInstance: {fileID: 8132102739279961663}
   m_PrefabAsset: {fileID: 0}

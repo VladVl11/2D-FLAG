@@ -29,11 +29,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5296006188929230393}
+  - {fileID: 6116855885160817286}
+  - {fileID: 8031969568023466262}
+  - {fileID: 2672276810049596484}
   - {fileID: 2412221081362412919}
-  - {fileID: 1813145264627581303}
-  - {fileID: 7039876220086411815}
-  - {fileID: 8918493920099043114}
-  - {fileID: 2024949648831324015}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7289076673227915702
@@ -173,7 +173,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1001 &2938145328708971694
+--- !u!1001 &3368982475581616
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -195,7 +195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.199997
+      value: -57.4
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -234,6 +234,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 8.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 27.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -263,7 +279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155517043958337255, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Name
-      value: BookcaseStanding (1)
+      value: BookcaseStanding (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7393527414776843775, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Size.x
@@ -286,12 +302,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
---- !u!4 &7039876220086411815 stripped
+--- !u!4 &5296006188929230393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
-  m_PrefabInstance: {fileID: 2938145328708971694}
+  m_PrefabInstance: {fileID: 3368982475581616}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3652440688046344611
+--- !u!1001 &2132376940094893071
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -313,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 84.2
+      value: 22.2
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -352,6 +368,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 8.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 27.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -381,7 +413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155517043958337255, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Name
-      value: BookcaseStanding (2)
+      value: BookcaseStanding (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7393527414776843775, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Size.x
@@ -404,12 +436,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
---- !u!4 &8918493920099043114 stripped
+--- !u!4 &6116855885160817286 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
-  m_PrefabInstance: {fileID: 3652440688046344611}
+  m_PrefabInstance: {fileID: 2132376940094893071}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5790889701789175806
+--- !u!1001 &2739174044226740127
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -431,7 +463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -74.8
+      value: 107.5
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -470,6 +502,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 8.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 27.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -499,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155517043958337255, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Name
-      value: BookcaseStanding
+      value: BookcaseStanding (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7393527414776843775, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Size.x
@@ -522,12 +570,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
---- !u!4 &1813145264627581303 stripped
+--- !u!4 &8031969568023466262 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
-  m_PrefabInstance: {fileID: 5790889701789175806}
+  m_PrefabInstance: {fileID: 2739174044226740127}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6156096856565158374
+--- !u!1001 &7809554127575753421
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -549,7 +597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 162
+      value: 172.9
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -588,6 +636,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 8.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 27.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -617,7 +681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155517043958337255, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Name
-      value: BookcaseStanding (3)
+      value: BookcaseStanding (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7393527414776843775, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Size.x
@@ -640,8 +704,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
---- !u!4 &2024949648831324015 stripped
+--- !u!4 &2672276810049596484 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
-  m_PrefabInstance: {fileID: 6156096856565158374}
+  m_PrefabInstance: {fileID: 7809554127575753421}
   m_PrefabAsset: {fileID: 0}

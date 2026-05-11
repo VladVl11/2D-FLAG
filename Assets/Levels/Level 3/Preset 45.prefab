@@ -166,14 +166,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 4944401622166688996}
+  - {fileID: 3297971685092245738}
+  - {fileID: 4303917527358730684}
+  - {fileID: 1623967327731154926}
   - {fileID: 7103682347242819026}
-  - {fileID: 8762405002136117961}
-  - {fileID: 7551430449284356870}
-  - {fileID: 1616523906852972328}
-  - {fileID: 26738729513388918}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2429930041547298191
+--- !u!1001 &1002827823872727661
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -195,11 +195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.9
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.7
+      value: -24.1
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -234,6 +234,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 11.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 15.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -263,7 +279,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155517043958337255, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Name
-      value: BookcaseStanding (2)
+      value: BookcaseStanding (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7393527414776843775, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Size.x
@@ -286,12 +302,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
---- !u!4 &7551430449284356870 stripped
+--- !u!4 &4944401622166688996 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
-  m_PrefabInstance: {fileID: 2429930041547298191}
+  m_PrefabInstance: {fileID: 1002827823872727661}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3525924260344130624
+--- !u!1001 &6916882710905680231
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -313,11 +329,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 80.2
+      value: -73
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.7
+      value: -24.1
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -352,6 +368,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 11.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 15.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -381,7 +413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155517043958337255, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Name
-      value: BookcaseStanding (1)
+      value: BookcaseStanding (8)
       objectReference: {fileID: 0}
     - target: {fileID: 7393527414776843775, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Size.x
@@ -404,12 +436,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
---- !u!4 &8762405002136117961 stripped
+--- !u!4 &1623967327731154926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
-  m_PrefabInstance: {fileID: 3525924260344130624}
+  m_PrefabInstance: {fileID: 6916882710905680231}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5272087027493864959
+--- !u!1001 &7255429041269493347
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -431,11 +463,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 166.1
+      value: 178.6
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.7
+      value: -24.1
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -470,6 +502,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 11.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 15.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -499,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155517043958337255, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Name
-      value: BookcaseStanding (4)
+      value: BookcaseStanding (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7393527414776843775, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Size.x
@@ -522,12 +570,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
---- !u!4 &26738729513388918 stripped
+--- !u!4 &3297971685092245738 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
-  m_PrefabInstance: {fileID: 5272087027493864959}
+  m_PrefabInstance: {fileID: 7255429041269493347}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6853285036451850657
+--- !u!1001 &8272654791018610485
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -549,11 +597,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -82.1
+      value: 2.4
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -23.7
+      value: -24.1
       objectReference: {fileID: 0}
     - target: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -588,6 +636,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.x
+      value: 11.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Size.y
+      value: 15.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 5528513404879859168, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -617,7 +681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6155517043958337255, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Name
-      value: BookcaseStanding (3)
+      value: BookcaseStanding (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7393527414776843775, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
       propertyPath: m_Size.x
@@ -640,8 +704,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
---- !u!4 &1616523906852972328 stripped
+--- !u!4 &4303917527358730684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5293077029109075593, guid: 74a0abd9e73675c49a6d3b5fe196d3f7, type: 3}
-  m_PrefabInstance: {fileID: 6853285036451850657}
+  m_PrefabInstance: {fileID: 8272654791018610485}
   m_PrefabAsset: {fileID: 0}
