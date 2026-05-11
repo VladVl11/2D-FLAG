@@ -300,22 +300,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapGeneration
   MapPrefabs:
-  - {fileID: 1359476822017235876, guid: 371ca714a7166d44e877f10e8d9b21d0, type: 3}
-  - {fileID: 1359476822017235876, guid: cbe1805694b92424bb432880e209e32f, type: 3}
-  - {fileID: 8862945118188341210, guid: f30e1402575d90e4ca0fdae476d4c732, type: 3}
-  - {fileID: 8970453814451441795, guid: b1338ac4fc0ac7c428a551e415aae5c9, type: 3}
-  - {fileID: 1693573761189968599, guid: a0a7a15275160f246b5961b8869f3e48, type: 3}
-  - {fileID: 1693573761189968599, guid: 6c50ec51dd34b904ebefaf77bce432cc, type: 3}
-  - {fileID: 4774981059497383869, guid: 1a13696932685c044a2f0cc144130c87, type: 3}
-  - {fileID: 4774981059497383869, guid: 70203243558bfa043b03bff216107c84, type: 3}
-  - {fileID: 8844366625390626375, guid: 6dffb0228da548b41b5d20116e79b020, type: 3}
-  - {fileID: 8844366625390626375, guid: a5208f3c7d834414f9c2f0a1ef85f9d3, type: 3}
+  - {fileID: 3454152226173389816, guid: b1d757151ab467e468e06724fe92dc9e, type: 3}
+  - {fileID: 43829357657530808, guid: 3b695ba12310c6a45a5d6e00414e4149, type: 3}
+  - {fileID: 1668965540559744323, guid: 00d034cdf5bf9ef419e974558da730ab, type: 3}
   mapSize: 40
   mapY: -3.5
   PlayerCharacter: {fileID: 1166264932786135069, guid: 5f2f1fd66689edf4d8d2e0ec6839f2aa, type: 3}
   PlayerSpawn: {x: -5, y: 5, z: 0}
   Camera: {fileID: 220115154}
   GameObjectCamera: []
+  StartPreset: {fileID: 1480552934432070955, guid: be021a00c06a3e544bd3361dd4cdd92f, type: 3}
+  FinishPreset: {fileID: 4025899882307256994, guid: ae72294113fece145a3b1271f354585c, type: 3}
 --- !u!4 &636067733
 Transform:
   m_ObjectHideFlags: 0

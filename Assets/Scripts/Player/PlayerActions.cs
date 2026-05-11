@@ -28,7 +28,7 @@ public class PlayerActions : MonoBehaviour
     {
         if(timesJumped < 1 && !stats.stunned && !stats.tripped)
         {
-            rb.AddForce(Vector2.up * stats.GetJForce(), ForceMode2D.Impulse);
+            rb.linearVelocityY = stats.GetJForce();
             timesJumped++;
         }
     }
