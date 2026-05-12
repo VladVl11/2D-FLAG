@@ -50,7 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b90e41dc2d0ef41a36ffd8e6ed5efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PresetLength
-  length: 16
+  entrypoint: {fileID: 0}
+  exitpoint: {fileID: 0}
 --- !u!1 &2865132615946225579
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,7 +219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Offset.x
-      value: -15
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Offset.y
@@ -606,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Offset.x
-      value: -15
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 7565308682243948638, guid: 30521e2a210ce234f8f9b865b376280b, type: 3}
       propertyPath: m_Offset.y

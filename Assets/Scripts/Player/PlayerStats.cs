@@ -8,7 +8,7 @@ public class PlayerStats : MonoBehaviour
     // Movement variables
     [SerializeField] private float mSpeed;
     private float currentSpeed;
-    private float jForce = 7f;
+    private float jForce = 8f;
 
     // Stun variables
     private bool isStunnable = true;
