@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Terrain
   - Death
+  - Options
   layers:
   - Default
   - TransparentFX

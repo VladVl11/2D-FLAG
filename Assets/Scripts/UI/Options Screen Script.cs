@@ -1,11 +1,5 @@
-using JetBrains.Annotations;
-using NUnit.Framework;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
-using UnityEngine.Audio;
 
 public class OptionsScreenScript : MonoBehaviour
 {
