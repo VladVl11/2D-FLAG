@@ -12,7 +12,6 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] Transform gCheck;
     private float timesJumped;
     [SerializeField] private LayerMask gLayer;
-
     [SerializeField] private GameObject Options;
 
     /// Input system functions

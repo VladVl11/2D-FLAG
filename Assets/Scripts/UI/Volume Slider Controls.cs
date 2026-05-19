@@ -15,7 +15,6 @@ public class VolumeSliderControls : MonoBehaviour
     private void Awake()
     {
         Slider.onValueChanged.AddListener(SliderValueChanged);
-        DontDestroyOnLoad(gameObject); 
     }
 
     public void SliderValueChanged(float SliderValue)
