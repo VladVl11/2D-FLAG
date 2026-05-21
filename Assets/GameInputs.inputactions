@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "name": "Player",
+    "name": "GameInputs",
     "maps": [
         {
             "name": "Player",
@@ -102,6 +102,34 @@
                 {
                     "name": "",
                     "id": "8d16e21e-a6f2-414b-9496-a58d3490f01c",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Options",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "GameManager",
+            "id": "46927af4-f9fd-4875-a84e-3ab7b779cd3e",
+            "actions": [
+                {
+                    "name": "Options",
+                    "type": "Button",
+                    "id": "15a8572e-4652-4b83-b09d-73ddb9e2413c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "df44ed1b-6435-43bb-b115-21ac4a3c6636",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",

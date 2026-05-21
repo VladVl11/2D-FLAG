@@ -12,7 +12,6 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] Transform gCheck;
     private float timesJumped;
     [SerializeField] private LayerMask gLayer;
-    [SerializeField] private GameObject Options;
 
     /// Input system functions
     private void OnMove(InputValue value) {
@@ -34,23 +33,10 @@ public class PlayerActions : MonoBehaviour
         }
     }
 
-    private void OnOptions()
-    {
-        if(Options.activeSelf)
-        {
-            Options.SetActive(false);
-        }
-        else
-        {
-            Options.SetActive(true);
-        }
-    }
-
     private void Awake() {
         gun = GetComponentInChildren<Weapon>();
         stats = GetComponent<PlayerStats>();
         rb = GetComponent<Rigidbody2D>();
-        Options = GameObject.FindGameObjectWithTag("Options");
     }
 
     private void FixedUpdate(){

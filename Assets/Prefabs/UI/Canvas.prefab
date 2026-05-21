@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 231244830085551589}
   - component: {fileID: 7658684448941699064}
   - component: {fileID: 7403644208449121313}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Exit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 7882091245945926795}
   - component: {fileID: 6221245520691720536}
   - component: {fileID: 1317601170688808806}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 9145504707722495606}
   - component: {fileID: 7304125731511679360}
   - component: {fileID: 4694152580873343298}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Options Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5240889724940730683}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,7 +439,8 @@ GameObject:
   - component: {fileID: 4928152389624020255}
   - component: {fileID: 4631249745424643487}
   - component: {fileID: 4658453298425203545}
-  m_Layer: 5
+  - component: {fileID: 6010415039552187335}
+  m_Layer: 7
   m_Name: Start Button Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,6 +569,46 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6010415039552187335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4590077446812293236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:046efd29c940b0d42a84769136bab067
+    m_TableEntryReference:
+      m_KeyId: 6678793662464
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4658453298425203545}
+        m_TargetAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &4816395965083333807
 GameObject:
   m_ObjectHideFlags: 0
@@ -580,7 +621,7 @@ GameObject:
   - component: {fileID: 8958241882684267886}
   - component: {fileID: 7885268662775974895}
   - component: {fileID: 5727162727408864196}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Start Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -711,7 +752,8 @@ GameObject:
   - component: {fileID: 5329978385930290145}
   - component: {fileID: 974082200150602239}
   - component: {fileID: 6095685414221272431}
-  m_Layer: 5
+  - component: {fileID: 8958299718234987650}
+  m_Layer: 7
   m_Name: Quit Button Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,6 +881,46 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8958299718234987650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5616053915074103470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:046efd29c940b0d42a84769136bab067
+    m_TableEntryReference:
+      m_KeyId: 7087063019520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6095685414221272431}
+        m_TargetAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &6818138282717970894
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,7 +932,8 @@ GameObject:
   - component: {fileID: 355965507961626403}
   - component: {fileID: 9208289523445759822}
   - component: {fileID: 3511656081087285418}
-  m_Layer: 5
+  - component: {fileID: 5830704894908921247}
+  m_Layer: 7
   m_Name: Options Button Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -978,3 +1061,43 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5830704894908921247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6818138282717970894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Components.LocalizeStringEvent
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:046efd29c940b0d42a84769136bab067
+    m_TableEntryReference:
+      m_KeyId: 7433944543232
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3511656081087285418}
+        m_TargetAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []

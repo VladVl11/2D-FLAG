@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public static AudioManager Instance { get; private set; }
+
     [Header("------ Audio Source -------")]
     [SerializeField] AudioSource MusicSource;
     [SerializeField] AudioSource SFXSource;
@@ -18,6 +20,15 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(this);
+        }
         DontDestroyOnLoad(gameObject);
     }
 

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Language_Table Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: Language_Table
+  m_TableCollectionNameGuidString: 046efd29c940b0d42a84769136bab067
+  m_Entries:
+  - m_Id: 314641985536
+    m_Key: Graphics
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1412366839808
+    m_Key: 'Audio
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1820350984192
+    m_Key: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6678793662464
+    m_Key: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7087063019520
+    m_Key: 'Quit
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7433944543232
+    m_Key: Options
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3163482362297712849
+  references:
+    version: 2
+    RefIds:
+    - rid: 3163482362297712849
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1779384983775
