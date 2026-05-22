@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4296677168421443028}
   - component: {fileID: 4074592036154373420}
   - component: {fileID: 6550658198606071376}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (8)
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 441747545393182115}
   - component: {fileID: 7517336251027366073}
   - component: {fileID: 7940737637608826887}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (5)
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 7564141486282050924}
   - component: {fileID: 7169392602712344064}
   - component: {fileID: 7671679719549956160}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (9)
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 4453228810765143072}
   - component: {fileID: 2588642493513639556}
   - component: {fileID: 2388043675069665561}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (6)
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -599,7 +599,7 @@ GameObject:
   - component: {fileID: 3835659904253930997}
   - component: {fileID: 1857384096641267973}
   - component: {fileID: 6203699420353975539}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (7)
   m_TagString: Terrain
   m_Icon: {fileID: 0}

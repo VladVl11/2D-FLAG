@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 4727105535285589426}
   - component: {fileID: 3279245895107235768}
   - component: {fileID: 7234537906600186814}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Terrain
   m_Icon: {fileID: 0}

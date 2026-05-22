@@ -50,7 +50,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b90e41dc2d0ef41a36ffd8e6ed5efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PresetLength
-  length: 16
+  entrypoint: {fileID: 0}
+  exitpoint: {fileID: 0}
 --- !u!1 &2865132615946225579
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +63,7 @@ GameObject:
   - component: {fileID: 3774243166932280772}
   - component: {fileID: 7850914563408588313}
   - component: {fileID: 8996536630052774148}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Terrain
   m_Icon: {fileID: 0}

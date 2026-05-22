@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 476401472933903035}
   - component: {fileID: 8904566972543754218}
   - component: {fileID: 5728471795524801161}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (3)
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 238926734315189183}
   - component: {fileID: 8506104051294997001}
   - component: {fileID: 4184679068340442374}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 938673046587051417}
   - component: {fileID: 500918234014517104}
   - component: {fileID: 7818165635094089450}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (2)
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 3635946882850594407}
   - component: {fileID: 7162956392542459254}
   - component: {fileID: 5666913624427514111}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (4)
   m_TagString: Terrain
   m_Icon: {fileID: 0}
@@ -601,7 +601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6b90e41dc2d0ef41a36ffd8e6ed5efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PresetLength
-  length: 32
+  entrypoint: {fileID: 0}
+  exitpoint: {fileID: 0}
 --- !u!1001 &1667980502274389244
 PrefabInstance:
   m_ObjectHideFlags: 0
