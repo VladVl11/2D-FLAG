@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     [SerializeField] private GameObject Options;
     public TMP_Dropdown dropdown;
+    [SerializeField] private GameObject player;
+    private Transform spawnPoint;
 
     private void Awake()
     {
@@ -34,6 +36,25 @@ public class GameManager : MonoBehaviour
         else
         {
             Options.SetActive(true);
+        }
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        spawnPoint = GameObject.FindGameObjectWithTag("Spawn").transform;
+        if(spawnPoint != null)
+        {
+            Instantiate(player, spawnPoint.position, spawnPoint.rotation);
         }
     }
 
@@ -66,6 +87,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("Locale not found: " + languageCode);
         }
     }
+
 
     public void SceneLoad()
     {
