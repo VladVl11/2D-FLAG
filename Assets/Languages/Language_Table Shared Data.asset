@@ -43,6 +43,60 @@ MonoBehaviour:
     m_Key: Options
     m_Metadata:
       m_Items: []
+  - m_Id: 1080373997973504
+    m_Key: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1080672389148672
+    m_Key: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1081648592433152
+    m_Key: Jump control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1081750572740608
+    m_Key: Move left control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082111173832704
+    m_Key: Move right control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082355185856512
+    m_Key: Fireball control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1082646824202240
+    m_Key: Shoot control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1083209045487616
+    m_Key: Control details
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1084419005722624
+    m_Key: Controls return to title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1086565457571840
+    m_Key: Developers text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1087133529911296
+    m_Key: Music text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1087721344839680
+    m_Key: 'Title screen button text
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1088096814739456
+    m_Key: Organiser Text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

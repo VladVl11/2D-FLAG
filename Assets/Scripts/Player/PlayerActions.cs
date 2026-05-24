@@ -1,7 +1,6 @@
-using System.Runtime.CompilerServices;
-using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerActions : MonoBehaviour
 {
@@ -37,6 +36,15 @@ public class PlayerActions : MonoBehaviour
         gun = GetComponentInChildren<Weapon>();
         stats = GetComponent<PlayerStats>();
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        Vector3 viewportPos = Camera.main.WorldToViewportPoint(gameObject.transform.position);
+        if (viewportPos.y < 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     private void FixedUpdate(){
