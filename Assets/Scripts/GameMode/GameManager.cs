@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject Options;
     public TMP_Dropdown dropdown;
     [SerializeField] private GameObject player;
-    private Transform spawnPoint;
+    private bool isPaused = false;
+    private float tempTime;
 
     private void Awake()
     {
@@ -29,13 +30,24 @@ public class GameManager : MonoBehaviour
 
     private void OnOptions()
     {
-        if(Options.activeSelf)
+        if(SceneManager.GetActiveScene().buildIndex != 0)
         {
-            Options.SetActive(false);
-        }
-        else
-        {
-            Options.SetActive(true);
+            if(Options.activeSelf)
+            {
+                Options.SetActive(false);
+                if(isPaused)
+                {
+                    ResumeGame();
+                }
+            }
+            else
+            {
+                Options.SetActive(true);
+                if(!isPaused)
+                {
+                    PauseGame();
+                }
+            }
         }
     }
 
@@ -51,7 +63,8 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        spawnPoint = GameObject.FindGameObjectWithTag("Spawn").transform;
+        GameObject spawnObj = GameObject.FindGameObjectWithTag("Spawn");
+        Transform spawnPoint = spawnObj != null ? spawnObj.transform : null;
         if(spawnPoint != null)
         {
             Instantiate(player, spawnPoint.position, spawnPoint.rotation);
@@ -86,6 +99,22 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Locale not found: " + languageCode);
         }
+    }
+
+    public void PauseGame()
+    {
+        isPaused = true;
+
+        tempTime = Time.timeScale;
+        Time.timeScale = 0f;
+        AudioListener.pause = true;
+    }
+    public void ResumeGame()
+    {
+        if(!isPaused) return;
+        isPaused = false;
+        Time.timeScale = tempTime;
+        AudioListener.pause = false;
     }
 
 

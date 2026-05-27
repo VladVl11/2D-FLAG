@@ -16,15 +16,4 @@ public class TitleScreenCode : MonoBehaviour
         Application.Quit();
         print("The game has been closed");
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        print("The Script has been run");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
