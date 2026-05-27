@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization;
 using TMPro;
-using Unity.VisualScripting;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -75,7 +75,7 @@ public class GameManager : MonoBehaviour
         if(startButton != null)
         {
             startButton.onClick.RemoveAllListeners();
-            startButton.onClick.AddListener(() =>SceneLoad("Level 1"));
+            startButton.onClick.AddListener(SceneLoad);
         }
 
         if(spawnPoint != null)
@@ -142,8 +142,9 @@ public class GameManager : MonoBehaviour
     {
         ResumeGame();
         fadeImage.gameObject.SetActive(true);
-        Scene scene = SceneManager.GetSceneByBuildIndex(SceneManager.GetActiveScene().buildIndex + 1);
-        StartCoroutine(FadeInOut(scene.name));
+        int sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        string sceneName = Path.GetFileNameWithoutExtension(SceneUtility.GetScenePathByBuildIndex(sceneIndex));
+        StartCoroutine(FadeInOut(sceneName));
     }
     public void SceneLoad(string sceneName)
     {
