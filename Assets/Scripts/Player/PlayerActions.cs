@@ -43,7 +43,7 @@ public class PlayerActions : MonoBehaviour
         Vector3 viewportPos = Camera.main.WorldToViewportPoint(gameObject.transform.position);
         if (viewportPos.y < 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameManager.Instance.GameOver();
         }
     }
 

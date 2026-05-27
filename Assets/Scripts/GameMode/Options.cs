@@ -12,7 +12,7 @@ public class Options : MonoBehaviour
         }
         else
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 }

@@ -7,7 +7,7 @@ public class RestartSceneOnCollision : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            GameManager.Instance.GameOver();
         }
     }
 }

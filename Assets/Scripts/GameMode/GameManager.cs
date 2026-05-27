@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Localization.Settings;
 using UnityEngine.Localization;
 using TMPro;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
     private float tempTime;
     [SerializeField] private Image fadeImage;
     private float fadeDuration = 1f;
+    [SerializeField] private GameObject GameOverScreen;
 
     private void Awake()
     {
@@ -27,7 +29,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 
@@ -68,6 +70,14 @@ public class GameManager : MonoBehaviour
     {
         GameObject spawnObj = GameObject.FindGameObjectWithTag("Spawn");
         Transform spawnPoint = spawnObj != null ? spawnObj.transform : null;
+        Button startButton = GameObject.Find("Start Button")?.GetComponent<Button>();
+
+        if(startButton != null)
+        {
+            startButton.onClick.RemoveAllListeners();
+            startButton.onClick.AddListener(() =>SceneLoad("Level 1"));
+        }
+
         if(spawnPoint != null)
         {
             Instantiate(player, spawnPoint.position, spawnPoint.rotation);
@@ -115,22 +125,37 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         if(!isPaused) return;
+
         isPaused = false;
         Time.timeScale = tempTime;
         AudioListener.pause = false;
     }
 
+    public void GameOver()
+    {
+        GameOverScreen.SetActive(true);
+        PauseGame();
+    }
+
 
     public void SceneLoad()
     {
+        ResumeGame();
         fadeImage.gameObject.SetActive(true);
         Scene scene = SceneManager.GetSceneByBuildIndex(SceneManager.GetActiveScene().buildIndex + 1);
         StartCoroutine(FadeInOut(scene.name));
     }
     public void SceneLoad(string sceneName)
     {
+        ResumeGame();
         fadeImage.gameObject.SetActive(true);
         StartCoroutine(FadeInOut(sceneName));
+    }
+
+    public void ReloadScene()
+    {
+        ResumeGame();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     IEnumerator FadeInOut(string sceneName)
@@ -145,6 +170,7 @@ public class GameManager : MonoBehaviour
             c.a = t / fadeDuration;
             c.a = Mathf.Clamp01(c.a);
             fadeImage.color = c;
+            yield return null;
         }
         SceneManager.LoadScene(sceneName);
         float t2 = fadeDuration;
@@ -158,7 +184,7 @@ public class GameManager : MonoBehaviour
             fadeImage.color = c;
             yield return null;
         }
-
+        fadeImage.gameObject.SetActive(false);
     }
 
 }
