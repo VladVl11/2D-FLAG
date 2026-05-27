@@ -143,14 +143,13 @@ public class GameManager : MonoBehaviour
         ResumeGame();
         fadeImage.gameObject.SetActive(true);
         int sceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-        string sceneName = Path.GetFileNameWithoutExtension(SceneUtility.GetScenePathByBuildIndex(sceneIndex));
-        StartCoroutine(FadeInOut(sceneName));
+        StartCoroutine(FadeInOut(sceneIndex));
     }
-    public void SceneLoad(string sceneName)
+    public void SceneLoad(int sceneIndex)
     {
         ResumeGame();
         fadeImage.gameObject.SetActive(true);
-        StartCoroutine(FadeInOut(sceneName));
+        StartCoroutine(FadeInOut(sceneIndex));
     }
 
     public void ReloadScene()
@@ -159,7 +158,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    IEnumerator FadeInOut(string sceneName)
+    IEnumerator FadeInOut(int sceneIndex)
     {
         float t = 0f;
 
@@ -173,7 +172,7 @@ public class GameManager : MonoBehaviour
             fadeImage.color = c;
             yield return null;
         }
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneIndex);
         float t2 = fadeDuration;
         while (t2 > 0)
         {
