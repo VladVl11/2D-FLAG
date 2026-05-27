@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject player;
     private bool isPaused = false;
     private float tempTime;
+    [SerializeField] private Image fadeImage;
+    private float fadeDuration = 1f;
 
     private void Awake()
     {
@@ -120,11 +123,42 @@ public class GameManager : MonoBehaviour
 
     public void SceneLoad()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        fadeImage.gameObject.SetActive(true);
+        Scene scene = SceneManager.GetSceneByBuildIndex(SceneManager.GetActiveScene().buildIndex + 1);
+        StartCoroutine(FadeInOut(scene.name));
     }
     public void SceneLoad(string sceneName)
     {
+        fadeImage.gameObject.SetActive(true);
+        StartCoroutine(FadeInOut(sceneName));
+    }
+
+    IEnumerator FadeInOut(string sceneName)
+    {
+        float t = 0f;
+
+        while (t < fadeDuration)
+        {
+            t += Time.deltaTime;
+
+            Color c = fadeImage.color;
+            c.a = t / fadeDuration;
+            c.a = Mathf.Clamp01(c.a);
+            fadeImage.color = c;
+        }
         SceneManager.LoadScene(sceneName);
+        float t2 = fadeDuration;
+        while (t2 > 0)
+        {
+            t2 -= Time.deltaTime;
+
+            Color c = fadeImage.color;
+            c.a = t2 / fadeDuration;
+            c.a = Mathf.Clamp01(c.a);
+            fadeImage.color = c;
+            yield return null;
+        }
+
     }
 
 }

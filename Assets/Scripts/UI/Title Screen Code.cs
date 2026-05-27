@@ -6,11 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreenCode : MonoBehaviour
 {
-    string[] TitleScreenSelection = {"Start Game" , "Load Game" , "Options" , "Controls" , "Exit Game"};
-    public void ChangeScenes(string SceneName)
-    {
-        SceneManager.LoadScene(SceneName);   
-    }
     public void QuitApp()
     {
         Application.Quit();
