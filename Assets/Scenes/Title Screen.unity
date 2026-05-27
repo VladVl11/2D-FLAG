@@ -1841,6 +1841,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 4561918307724652973, guid: 808f8b346d62b2c4d9cebfa024f3f38e, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4720881054237672772, guid: 808f8b346d62b2c4d9cebfa024f3f38e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 120
