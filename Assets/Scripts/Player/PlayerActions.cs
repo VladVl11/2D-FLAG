@@ -11,6 +11,7 @@ public class PlayerActions : MonoBehaviour
     [SerializeField] Transform gCheck;
     private float timesJumped;
     [SerializeField] private LayerMask gLayer;
+    private bool over = false;
 
     /// Input system functions
     private void OnMove(InputValue value) {
@@ -41,9 +42,10 @@ public class PlayerActions : MonoBehaviour
     private void Update()
     {
         Vector3 viewportPos = Camera.main.WorldToViewportPoint(gameObject.transform.position);
-        if (viewportPos.y < 0)
+        if (viewportPos.y < 0 && !over)
         {
             GameManager.Instance.GameOver();
+            over = true;
         }
     }
 

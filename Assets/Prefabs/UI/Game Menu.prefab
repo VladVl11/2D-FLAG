@@ -1157,7 +1157,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3341558862764246126}
+      - m_Target: {fileID: 673682782388333094}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -3106,6 +3106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c5083568f6c84741b4a4dbdf1f3ff04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Options
+  optionsMenu: {fileID: 673682782388333094}
+  exit: {fileID: 3850443261816545502}
 --- !u!1 &3359078102682516743
 GameObject:
   m_ObjectHideFlags: 0
