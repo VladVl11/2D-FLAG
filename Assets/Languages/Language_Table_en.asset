@@ -102,6 +102,22 @@ MonoBehaviour:
       University Of Portsmouth'
     m_Metadata:
       m_Items: []
+  - m_Id: 2432250782134272
+    m_Localized: Level Failed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2432568517439488
+    m_Localized: Retry Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2433678762291200
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2433931158728704
+    m_Localized: Graphics Quiality
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

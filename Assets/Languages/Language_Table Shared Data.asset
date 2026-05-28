@@ -97,6 +97,22 @@ MonoBehaviour:
     m_Key: Organiser Text
     m_Metadata:
       m_Items: []
+  - m_Id: 2432250782134272
+    m_Key: Game Over Text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2432568517439488
+    m_Key: Retry Button
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2433678762291200
+    m_Key: Resolution text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2433931158728704
+    m_Key: Graphics dropdown text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

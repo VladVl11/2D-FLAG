@@ -101,6 +101,22 @@ MonoBehaviour:
       Universitatea din Portsmouth'
     m_Metadata:
       m_Items: []
+  - m_Id: 2432250782134272
+    m_Localized: "Nivel e\u0219uat"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2432568517439488
+    m_Localized: "Re\xEEncearc\u0103 nivel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2433678762291200
+    m_Localized: "Rezolu\u021Bie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2433931158728704
+    m_Localized: Calitatea graficilor
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
