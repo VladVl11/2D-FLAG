@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   MusicSource: {fileID: 4402060649592437164}
-  SFXSource: {fileID: 4402060649592437164}
-  Background: {fileID: 8300000, guid: d624649d01c97c84296af3347718ebc8, type: 3}
+  SFXSource: {fileID: 4012269302354862062}
+  Background: {fileID: 8300000, guid: e618b2f2d987534499a6b3f13081e8f8, type: 3}
 --- !u!114 &419987912650518683
 MonoBehaviour:
   m_ObjectHideFlags: 0
