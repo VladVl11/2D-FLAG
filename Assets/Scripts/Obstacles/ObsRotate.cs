@@ -3,11 +3,12 @@ using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ObsRotate : MonoBehaviour
+public class ObsRotate : MonoBehaviour, IDamageable
 {
     private bool used = false;
     private Quaternion rot;
     private float rotSpeed = 0.5f;
+    private float hp = 2f;
 
     private void Awake()
     {
@@ -21,6 +22,15 @@ public class ObsRotate : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, rotSpeed);
             Debug.Log("rotating");
             rotSpeed += Time.deltaTime;
+        }
+    }
+
+    public void TakeDmg(float dmg)
+    {
+        hp -= dmg;
+        if(hp <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 
